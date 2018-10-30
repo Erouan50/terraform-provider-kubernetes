@@ -125,6 +125,7 @@ The following arguments are supported:
 #### Arguments
 
 * `active_deadline_seconds` - (Optional) Optional duration in seconds the pod may be active on the node relative to StartTime before the system will actively try to mark it failed and kill associated containers. Value must be a positive integer.
+* `automount_service_account_token` - (Optional) Indicates whether a service account token should be automatically mounted.
 * `container` - (Optional) List of containers belonging to the pod. Containers cannot currently be added or removed. There must be at least one container in a Pod. Cannot be updated. For more info see [Kubernetes reference](http://kubernetes.io/docs/user-guide/containers)
 * `init_container` - (Optional) List of init containers belonging to the pod. Init containers always run to completion and each must complete succesfully before the next is started. For more info see [Kubernetes reference](https://kubernetes.io/docs/concepts/workloads/pods/init-containers)/
 * `dns_policy` - (Optional) Set DNS policy for containers within the pod. One of 'ClusterFirst' or 'Default'. Defaults to 'ClusterFirst'.
